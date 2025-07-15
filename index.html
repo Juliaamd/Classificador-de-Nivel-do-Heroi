@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Batman XP Classifier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&family=Poppins:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Batman XP Classifier</h1>
+      <form id="xpForm">
+        <input type="number" id="xpHeroi" name="xpHeroi" placeholder="Insira o XP do Batman" min="0" required />
+        <button type="submit">Calcular Nível</button>
+      </form>
+      <div id="resultado"></div>
+    </div>
+  </div>
+
+  <!-- Morcego animado -->
+  <div id="bat-effect" aria-hidden="true">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/12/12453.png"
+      alt="Morcego animado"
+      class="bat-image"
+    />
+  </div>
+
+  <!-- Imagem lateral do Batman corrigida -->
+  <img
+    src="https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png"
+    alt="Batman Side"
+    class="batman-side"
+  />
+
+  <!-- Imagem decorativa morcego tradicional lado esquerdo -->
+<img
+  src="https://static.vecteezy.com/ti/vetor-gratis/p1/3579669-morcegos-cinza-objetos-sinais-simbolos-ilustracao-com-fundo-preto-gratis-vetor.jpg"
+  alt="Padrão de morcegos"
+  style="display: block; margin-left: 0; width: 300px;"
+/>
+
+
+  <!-- Imagem inferior -->
+  <img
+    src="https://www.seekpng.com/png/full/100-1006029_super-heris-minus-topo-de-bolo-batman-para.png"
+    alt="Batman Base"
+    class="batman-bottom"
+  />
+
+  <script src="script.js"></script>
+</body>
+</html>

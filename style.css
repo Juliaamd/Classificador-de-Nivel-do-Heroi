@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Luckiest Guy', cursive, 'Bangers', cursive, sans-serif;
+  background: #000;
+  color: #fcd116;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 25px;
+  padding: 40px 50px;
+  width: 90vw;
+  max-width: 600px;
+  box-shadow: 0 0 30px #fcd116aa;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="number"] {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 15px 20px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #004aad;
+  background: linear-gradient(45deg, #fcd116 0%, #004aad 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0 0 10px #fcd116aa;
+  cursor: text;
+}
+
+input[type="number"]::placeholder {
+  color: rgba(252, 209, 22, 0.6);
+  font-style: italic;
+}
+
+button {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 15px 0;
+  border-radius: 15px;
+  border: none;
+  background: #fcd116;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 0 15px #fcd116;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background: #004aad;
+  color: #fcd116;
+}
+
+#resultado {
+  margin-top: 35px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  color: #fcd116;
+  text-shadow: 1px 1px 3px #000;
+  min-height: 60px;
+  position: relative;
+}
+
+/* Morcego animado */
+#bat-effect {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 20;
+  animation: batSpin 1.5s ease-in-out forwards;
+  display: none; /* Começa escondido */
+}
+
+#bat-effect.show {
+  display: block;
+}
+
+.bat-image {
+  width: 80px;
+  height: 80px;
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes batSpin {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.4) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1) rotate(180deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.4) rotate(360deg);
+  }
+}
+
+/* Imagens decorativas */
+.batman-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 300px;
+  width: 30vw;
+  opacity: 0.7;
+  z-index: 5;
+  pointer-events: none;
+  user-select: none;
+}
+
+.batman-side {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  max-height: 100vh;
+  height: 100%;
+  width: auto;
+  opacity: 0.9;
+  z-index: 4;
+  pointer-events: none;
+  user-select: none;
+  background: transparent;
+}
+
+/* Lado esquerdo morcegos */
+.bats-left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-height: 90vh;
+  width: auto;
+  opacity: 0.6;
+  z-index: 3;
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 0 3px #fcd116);
+}
+
+/* Responsivo */
+@media (max-width: 650px) {
+  .container {
+    width: 95vw;
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  input[type="number"] {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
+
+  .batman-bottom {
+    max-width: 200px;
+    width: 40vw;
+  }
+
+  .batman-side {
+    max-width: 100px;
+    width: 25vw;
+  }
+
+  .bats-left {
+    display: none;
+  }
+}
