@@ -47,7 +47,8 @@ O projeto conta com:
 
 ## 📷 Captura de Tela
 
-<img width="1365" height="629" alt="Captura de tela 2025-07-15 145904" src="https://github.com/user-attachments/assets/4ab2cfc6-0c05-4770-af32-5548249aba15" />
+<img width="1332" height="620" alt="Captura de tela 2025-07-15 150903" src="https://github.com/user-attachments/assets/1dbc1954-ccf5-425d-999d-a73c94df598a" />
+
 
 
  
