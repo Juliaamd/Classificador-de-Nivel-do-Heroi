@@ -3,7 +3,7 @@
 Este projeto foi desenvolvido como parte do curso de Lógica de Programação da DIO. Foi também minha **primeira experiência prática com HTML e CSS**, além do uso de JavaScript para aplicar lógica condicional de forma visual e interativa.
 
 
-##📚 Descrição
+## 📚 Descrição
 
 Neste desafio, criei uma **variável para armazenar o nome e a XP de um herói**, e utilizei **estruturas condicionais (`if/else`)** para **classificar seu nível de acordo com a pontuação**. A ideia foi aplicada em um tema criativo com o personagem **Batman**, unindo lógica de programação com front-end.
 
